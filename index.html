@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-End Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>View our Featured Speakers for the Event</h1>
+      <p>
+        Speakers are core contributors and industry thought leaders working at
+        <span style="color: blue">companies</span> that push for innovation.
+      </p>
+    </header>
+
+    <div class="speaker-details" id="selectedSpeaker" hidden>
+      <div class="speaker-details__speaker-details__speakers">
+        <div class="close-icon" onclick="closeCard()">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="speaker-details__speaker-details-image">
+          <img id="selectedSpeakerImage" src="" alt="" />
+        </div>
+        <div class="speaker-details__details">
+          <h3 id="selectedSpeakerName"></h3>
+          <h4 id="selectedSpeakerTitle"></h4>
+          <p
+            style="position: relative; bottom: 1.2rem"
+            id="selectedSpeakerCompany"
+          ></p>
+          <div class="speaker-details__icons">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="speaker-details-description">
+          <p id="selectedSpeakerDescription"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-container">
+      <button class="carousel-control left" aria-label="Previous Speaker">
+        ❮
+      </button>
+      <div class="carousel-container__speakers-slider">
+        <div
+          class="carousel-container__speaker-card"
+          data-name="John Doe"
+          data-title="Chief Marketing Officer"
+          data-company="Acme Corp"
+          data-description="Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
+        >
+          <img src="./assets/Ellipse1.png" alt="John picture" />
+          <h2>John Doe</h2>
+          <h3>Chief Marketing Officer</h3>
+          <p>Acme Corp</p>
+        </div>
+        <div
+          class="carousel-container__speaker-card"
+          data-name="Jack Davis"
+          data-title="Chief Engagement Officer"
+          data-company="Acquia"
+          data-description="Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
+        >
+          <img src="./assets/Ellipse 2.png" alt="John Doe" />
+          <h2>Jack Davis</h2>
+          <h3>Chief Engagement Officer</h3>
+          <p>Acquia</p>
+        </div>
+        <div
+          class="carousel-container__speaker-card"
+          data-name="Mike Johnson"
+          data-title="Chief Technical Developer"
+          data-company="Pantheon"
+          data-description="client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
+        >
+          <img src="./assets/Ellipse 3.png" alt="John Doe" />
+          <h2>Mike Johnson</h2>
+          <h3>Chief Technical Developer</h3>
+          <p>Pantheon</p>
+        </div>
+        <div
+          class="carousel-container__speaker-card"
+          data-name="Tom Harris"
+          data-title="Chief Marketing Officer"
+          data-company="Specbee"
+          data-description="platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
+        >
+          <img src="./assets/Ellipse 4.png" alt="John Doe" />
+          <h2>Tom Harris</h2>
+          <h3>Chief Marketing Officer</h3>
+          <p>Specbee</p>
+        </div>
+        <div
+          class="carousel-container__speaker-card"
+          data-name="John Doe"
+          data-title="Chief Marketing Officer"
+          data-company="Acme Corp"
+          data-description=" business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
+        >
+          <img src="./assets/Ellipse1.png" alt="John Doe" />
+          <h2>John Doe</h2>
+          <h3>Chief Marketing Officer</h3>
+          <p>Acme Corp</p>
+        </div>
+        <div
+          class="carousel-container__speaker-card"
+          data-name="Jack Davis"
+          data-title="Chief Engagement Officer"
+          data-company="Acquia"
+          data-description=" Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
+        >
+          <img src="./assets/Ellipse 2.png" alt="John Doe" />
+          <h2>Jack Davis</h2>
+          <h3>Chief Engagement Officer</h3>
+          <p>Acquia</p>
+        </div>
+      </div>
+
+      <button class="carousel-control right" aria-label="Next Speaker">
+        ❯
+      </button>
+    </div>
+    <div class="seeTheProgram">
+      <button class="seeTheProgram__btn">See the Program</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
